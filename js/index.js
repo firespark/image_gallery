@@ -15,7 +15,7 @@ function createImageSrc(imageObj, sizeSuffix) {
 
 async function getData() {
     const res = await fetch(
-      `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api_key}&text=${search}&per_page=${per_page}&page=${page}&sort=interestingness-asc&format=json&nojsoncallback=?`
+      `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api_key}&tags=${search}&per_page=${per_page}&page=${page}&sort=interestingness-asc&format=json&nojsoncallback=?`
     );
     const data = await res.json();
 
