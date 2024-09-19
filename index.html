@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Image Gallery">
+    <meta name="keywords" content="">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/notice.css">
+
+    <title>Image Gallery</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="logo" data-animal="main">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="">
+                        <div class="logo-text">Image Gallery</div>
+                    </a>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+    </header>
+
+    <main>
+        <div class="main-screen">
+            
+            <div class="search-form">
+                <form id="search-form" autocomplete="off">
+                    <input type="search" name="search" class="search" placeholder="Search">
+                    <button type="submit" class="button"></button>
+                    <div class="close"></div>
+                </form>
+            </div>
+  
+            <div class="images-container"></div>
+        </div>        
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-block">
+                    <a class="footer-github" href="https://github.com/firespark" target="_blank">
+                        <img src="img/github.svg" alt="">
+                        <span>https://github.com/firespark</span>
+                    </a>
+                </div>
+                <div class="footer-block">
+                    <span id="year"></span>
+                </div>
+                
+                <div class="footer-block">
+                    <a class="footer-rss" href="https://rs.school/" target="_blank">
+                        <img src="img/rss.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <div class="notice-overlay hidden">
+        
+        <div class="notice-message">
+            <div class="content">
+                <h2>Привет!</h2>
+                <p>Изначально я сделала проект Генератор случайных фраз (на самом деле это генератор оскорблений, генератор имен и генератор случайных лиц). Но недавно выяснилось, что нужно обязательно сделать галерею, без выбора.</p>
+                <p>Конечно же, я сделала еще и галерею.</p>
+                <p>Но предлагаю тебе посетить мой предыдущий проект - не пропадать же добру. Может, получу дополнительные баллы.</p>
+                <p>Ссылка на проект - <a href="https://firespark.github.io/random-insult/" target="_blank">Random Insult</a></p>
+                <p>Оскорбления лучше читать на русском) Смешнее, хотя там добавлена цензура.</p>
+                <p>Кстати, если интересно, попробуй реализовать генератор случайных лиц (<a href="https://thispersondoesnotexist.com/" target="_blank">https://thispersondoesnotexist.com/</a>). Это оказалось сложнее, чем остальные API в том и этом проекте.</p>
+                <div class="button notice-button">
+                    <button id="notice-button">OK</button>
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script src="js/animals.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/notice.js"></script>
+
+</body>
+
+</html>

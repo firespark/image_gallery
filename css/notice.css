@@ -1,0 +1,73 @@
+body.ohidden {
+    overflow: hidden;
+    margin-right: 17px;
+}
+
+.hidden {
+    display: none;
+}
+
+.notice-overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-top: 50px;
+    overflow-y: auto;
+    background-color: rgba(41, 41, 41, 0.6);
+}
+
+.notice-overlay.hidden {
+    display: none;
+}
+
+.notice-message {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;        
+    background-color: #fff;
+    color: #000;    
+}
+
+.content {
+    font-size: 18px;
+    text-align: center;
+  }
+
+.button button {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid var(--brown);
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+  }
+
+.button.notice-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button.notice-button button {
+    border: 2px solid aqua;
+}
+
+.button.notice-button button {
+    display: block;
+    min-width: 200px;
+    padding: 10px;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    transition: linear 0.5s;
+}
+
+.button.notice-button button:hover {
+    background: #26b7cd;
+    border: 2px solid #26b7cd;
+}

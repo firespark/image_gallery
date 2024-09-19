@@ -1,0 +1,72 @@
+@media (max-width: 1199px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .images-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .nav-menu {
+        text-align: center;
+    }
+
+    .images-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image {
+        max-width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-block {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    a.footer-github {
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    a.footer-github img {
+        width: 30px;
+    }
+
+    a.footer-github span {
+        margin-left: 10px;
+    }
+
+    .footer-block:last-child {
+        justify-content: center;
+    }
+
+    a.footer-rss img {
+        width: 70px;
+    }
+        
+}
